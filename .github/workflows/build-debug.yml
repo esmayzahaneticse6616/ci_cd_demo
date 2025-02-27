@@ -43,15 +43,7 @@ jobs:
 
       # 5 Build Debug APK
       - name: Build Debug APK
-        run: flutter build apk --debug
-
-      # 6 Build Debug App Bundle (aab)
-      - name: Build Debug AppBundle
-        run: flutter build appbundle --debug
-
-      # 7 Build Debug IPA (iOS Build)
-      - name: Build Debug IPA
-        run: flutter build ios --no-codesign
+        run: flutter build apk 
 
       # 8 Upload Artifacts
       - name: Upload Artifacts
